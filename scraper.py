@@ -1,9 +1,8 @@
 from playwright.sync_api import sync_playwright
 
-URL = "https://voco.ee/tunniplaan/?course=1950"
-
-def get_next_week():
+def get_next_week(lesson):
     with sync_playwright() as p:
+        URL = f"https://voco.ee/tunniplaan/?course={lesson}"
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto(URL, wait_until="networkidle")

@@ -1,5 +1,7 @@
 # VOCO Timetable -> Google Calendar
 
+![Alt text](images/showcase_calendar.png)
+
 Intended use is for adding a crontab on Friday what triggers the main.py at 18:00. 18:00 friday should be the day when the lesson plan gets locked. 
 
 This project:
